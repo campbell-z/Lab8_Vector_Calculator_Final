@@ -1,11 +1,14 @@
 # Lab8_Vector_Calculator_Final
 ## About The Project
-    This program is a vector calculator that takes user input of 3 specified numbers assigned to a vector to perform vector operations.
-    User input is stored in a permanent vector storage array, and whenever the user enters a specific operrand command, the previously
-    inputted numbers are sent to a temporary working array where they are used in the function corresponding to the operation command.
-    If the operation is unassigned, the result is not assigned to the permanent vector storage array and is cycled out as the temporary
-    working array is reused. The user may save or load vectors using the corresponding command with .csv files. The program then the 
-    either writes the vectors into the file or reads the vectors and assigns them to the permanent vector storage array. Version 2.0
+    This program is a vector calculator that takes user input of 3 specified numbers assigned to a 
+    vector to perform vector operations. User input is stored in a permanent vector storage array, 
+    and whenever the user enters a specific operrand command, the previously inputted numbers are 
+    sent to a temporary working array where they are used in the function corresponding to the 
+    operation command. If the operation is unassigned, the result is not assigned to the permanent 
+    vector storage array and is cycled out as the temporary working array is reused. The user may 
+    save or load vectors using the corresponding command with .csv files. The program then the 
+    either writes the vectors into the file or reads the vectors and assigns them to the permanent 
+    vector storage array. Version 2.0
     uses a dynamic array to support these operations and a large number of vectors.
 ## How To Build The Program
     Utilize the included Makefiles for the respective versions or on the command line enter:
@@ -50,7 +53,9 @@
     *> help          Display help menu 
     *> quit          Exit program\n 
 ## Dynamic Memory Use
-    The program uses dynamic memory to store vectors in a dynamically sized array. When the array reaches capacity, realloc() increases
-    it's capacity by doubling the available storage. add_vector() uses a temporary pointer to safely handle reallocation and updates the
-    pointer only upon successful reallocation. clear() frees the allocated memory and resets the associated variables, allowing the 
-    program to reuse storage safely. clear() is called when the user quits to ensure memory is released before the program exists.
+    The program uses dynamic memory to store vectors in a dynamically sized array. When the array reaches 
+    capacity, realloc() increases it's capacity by doubling the available storage. add_vector() uses a 
+    temporary pointer to safely handle reallocation and updates the pointer only upon successful reallocation. 
+    clear() frees the allocated memory and resets the associated variables, allowing the program to reuse 
+    storage safely. clear() is called when the user quits to ensure memory is released before the program 
+    exists.
